@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileInputSreamEx {
+public class FileInputStreamEx {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 //		fileInputStreamEx();
