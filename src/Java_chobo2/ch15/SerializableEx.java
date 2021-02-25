@@ -21,13 +21,13 @@ public class SerializableEx {
 			UserInfo u2 = new UserInfo("JavaWeMan", "4321", 26);
 			
 			ArrayList<UserInfo> list = new ArrayList<>();
+			list.add(u1);
+			list.add(u2);
 			
 			oos.writeObject(u1);
 			oos.writeObject(u2);
 			oos.writeObject(list);
-			
-			list.add(u1);
-			list.add(u2);
+			System.out.println("done");
 
 		} catch (FileNotFoundException e) {
 			// TODO: handle exception
