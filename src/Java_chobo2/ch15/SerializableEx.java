@@ -11,7 +11,9 @@ public class SerializableEx {
 
 	public static void main(String[] args) {
 
-		try (FileOutputStream fos = new FileOutputStream(fileName);
+		String fileName = "UserInfo.ser";
+		
+		try (FileOutputStream fos = new FileOutputStream(fileName );
 				BufferedOutputStream bos = new BufferedOutputStream(fos);
 				ObjectOutputStream oos = new ObjectOutputStream(bos)) {
 
