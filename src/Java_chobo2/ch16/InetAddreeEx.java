@@ -12,7 +12,6 @@ class InetAddreeEx {
 			System.out.println("getHostName() :"+ip.getHostName());
 			System.out.println("getHostAddress() :"+ip.getHostAddress());
 			System.out.println("toString() :"+ip.toString());
-
 			byte[] ipAddr = ip.getAddress();
 			System.out.println("getAddress() :"+Arrays.toString(ipAddr));
 
@@ -42,5 +41,6 @@ class InetAddreeEx {
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
+		
 	} // main
 }
