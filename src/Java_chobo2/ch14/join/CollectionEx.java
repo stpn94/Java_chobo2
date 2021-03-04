@@ -1,6 +1,7 @@
 package Java_chobo2.ch14.join;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -16,7 +17,7 @@ public class CollectionEx {
 		ArrayList<Integer> arList = new ArrayList<>();
 		for (int i = 0; i < 10; i++)
 			arList.add(i);
-
+		
 		for (int i : arList) {
 			System.out.print(i + "");
 		}
