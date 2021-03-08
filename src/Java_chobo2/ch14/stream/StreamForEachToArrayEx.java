@@ -11,6 +11,7 @@ public class StreamForEachToArrayEx {
 	public static void main(String[] args) {
 		
 		// 스트림의 모든 요소에 지정된 작업을 수행
+		System.out.printf("%n=============================================%n");
 		IntStream.range(1, 10).sequential().forEach(new IntConsumer() {
 			
 			@Override
@@ -18,13 +19,15 @@ public class StreamForEachToArrayEx {
 				System.out.print(value);
 			}
 		});
-		System.out.printf("%n=============================================%n");
 		
 		IntStream.range(1, 10).parallel().forEach(System.out::print);
+		
 		IntStream.range(1, 10).parallel().forEach(e -> System.out.print(e));
+		
 		System.out.printf("%n=============================================%n");
 		
 		IntStream.range(1, 10).parallel().forEachOrdered(System.out::print);
+		
 		System.out.printf("%n=============================================%n");
 		// 스트림을 배열로 변환
 		Student[] stdArr = {new Student("김인환",1,280),
@@ -40,6 +43,8 @@ public class StreamForEachToArrayEx {
 		studentStream = Arrays.stream(stdArr);
 		Object[] objArr = studentStream.toArray();
 		System.out.println(Arrays.toString(objArr));
+		
+		
 		
 		
 	}
