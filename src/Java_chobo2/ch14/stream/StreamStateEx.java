@@ -15,8 +15,6 @@ public class StreamStateEx {
 	public static void main(String[] args) {
 		System.out.printf("%n=============================================%n");
 
-		// count()
-		// reduce()
 		List<Student> list = new ArrayList<>();
 		list.add(new Student("이자바", 3, 300));
 		list.add(new Student("김자바", 1, 200));
